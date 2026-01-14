@@ -16,7 +16,9 @@ def half():
         stderr=subprocess.PIPE,
         text=True
     )
-    print(result.stdout)
-    print(result.stderr)
+    return {
+        "result1": result.stdout,
+        "result2": result.stderr
+    }
 if __name__ == "__main__":
     uvicorn.run(app)
