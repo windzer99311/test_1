@@ -1,5 +1,1 @@
-{
-  "scripts": {
-    "postinstall": "bash scripts/install_ffmpeg.sh"
-  }
-}
+
